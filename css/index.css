@@ -1,0 +1,113 @@
+:root {
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+
+/* Container-Content */
+
+.body {
+    align-items: center;    background-color: hsl(222, 26%, 31%);
+    color: white;
+    display: flex;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.body-wrap {
+    margin: 1.5em 1em;
+}
+
+.calc-body {
+    width: 100%;
+}
+
+.theme-wrap {
+    display: flex;
+    font-size: 0.9rem;
+}
+
+.theme {
+    align-self: flex-end;
+    padding-right: 1.5rem;
+    padding-bottom: .3rem;
+}
+
+.toggle {
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-spans {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: .3rem;
+}
+
+.toggle-bar {
+    align-items: center;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 50px;
+    display: flex;
+    height: 2em;
+    padding: 0 0.5em;
+    width: 5.7em;
+}
+
+.toggle-ball {
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.calc-screen {
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    height: 4.5em;
+}
+
+
+/* Structure/ Skin */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .btn {
+    font-size: ;
+} */
+
+.toggle-spans > span + *,
+.calc-body > button + *,
+.theme-wrap,
+.toggle,
+.toggle-bar {
+    margin-top: 0;
+}
+
+.logo, 
+.theme {
+    margin: 0;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.span {
+    display: block;
+}
